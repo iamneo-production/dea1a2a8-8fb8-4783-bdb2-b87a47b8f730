@@ -13,7 +13,6 @@ function SignUp(props) {
 
     async function signup1(){
       let item = {username,password,user,conpassword,email,mobile};
-      //console.log(username + " " + password + " " + user + " " + conpassword + " " + email + " " + mobile);
       if(password!==conpassword){
         setError('Password & Confirm password Mismatch')
       }else{
