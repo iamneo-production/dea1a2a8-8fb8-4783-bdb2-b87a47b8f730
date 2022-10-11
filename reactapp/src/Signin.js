@@ -2,12 +2,12 @@ import React, { useState} from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
 
-function Login1(props) {
+function Signin(props) {
     const [email,setEmail] = useState("");
     const [password,setPassword] = useState("");
     const [error, setError] = useState("");
 
-    async function login(){
+    async function Signin(){
         if(email==null || password==null || email==="" || password===""){
             setError("Please enter values");
         }else{
@@ -47,12 +47,12 @@ function Login1(props) {
                     </div>
                     {error && <><small style={{ color: 'red' }}>{error}</small><br /></>}
                     <br/>
-                    <button className='btn btn-primary' onClick={login}> Login </button>
+                    <button className='btn btn-primary' onClick={Signin}> Login </button>
 
-                    <br/><br/><div className='text-center'>New User/Admin?<br/><a style={{textDecoration: 'none'}} href='signup'>SignUp</a></div>
+                    <br/><br/><div className='text-center'>New User/Admin?<br/><a style={{textDecoration: 'none'}} href='Signup'>SignUp</a></div>
                 </div>
             </div>
         </div>
     );
 }
-export default Login1;
+export default Signin;

@@ -11,9 +11,9 @@ function SignUp(props) {
     const [errorSignup, setErrorSignup] = useState("");
     const [loading, setLoading] = useState(false);
 
-    async function signup1(){
+  async function Signup(){
       let item = {username,password,user,conpassword,email,mobile};
-      //console.log(username + " " + password + " " + user + " " + conpassword + " " + email + " " + mobile);
+      console.log(username + " " + password + " " + user + " " + conpassword + " " + email + " " + mobile);
       if(password!==conpassword){
         setError('Password & Confirm password Mismatch')
       }else{
@@ -25,7 +25,7 @@ function SignUp(props) {
         .then((response)=> {
           response.json();
           if(response.status===200){
-            props.history.push("/login1");  
+            props.history.push("/Signin");  
           }else{
             setErrorSignup("Already Registered.. Please login");
           }
@@ -73,9 +73,9 @@ function SignUp(props) {
 
             
             <div style={{ marginTop: 30 }}>
-                <center><input type="button" className='btn btn-info' value='SignUp' onClick={signup1}/></center><br />
+                <center><input type="button" className='btn btn-info' value='SignUp' onClick={Signup}/></center><br />
             </div>
-            <div className='text-center'>Already a user?<br/><a style={{textDecoration: 'none'}} href='login1'>Login</a></div>
+            <div className='text-center'>Already a user?<br/><a style={{textDecoration: 'none'}} href='Signin'>Login</a></div>
           </div>
         </div>
       </div>
