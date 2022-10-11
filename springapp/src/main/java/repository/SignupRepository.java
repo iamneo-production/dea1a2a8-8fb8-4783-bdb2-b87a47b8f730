@@ -7,5 +7,6 @@ import com.examly.entity.Signup;
 public interface SignupRepository extends JpaRepository<Signup, Integer>{
 
 	Signup findByEmailAndPassword(String email, String password);
+
 	
 }

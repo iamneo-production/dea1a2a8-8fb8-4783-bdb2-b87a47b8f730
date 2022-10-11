@@ -1,4 +1,4 @@
-package com.example.demo.controller;
+package com.examly.controller;
 
 import java.util.List;
 import java.util.Optional;
@@ -13,8 +13,8 @@ import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.example.demo.entity.Course;
-import com.example.demo.service.CourseService;
+import com.examly.entity.Course;
+import com.examly.service.CourseService;
 
 
 @RestController
