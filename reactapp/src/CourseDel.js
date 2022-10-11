@@ -73,7 +73,7 @@ function Course(props) {
                     <div className='row'>
                         <div className='col-sm-3'>
                             <div className='card shadow-lg p-3 mb-5 bg-white rounded' style={{ width: '200px' }}>
-                                <div className='text-center'><a style={{ textDecoration: 'none' }} href='login1'>Logout</a></div>
+                                <div className='text-center'><a style={{ textDecoration: 'none' }} href='Signin'>Logout</a></div>
                             </div>
                         </div>
                     </div>

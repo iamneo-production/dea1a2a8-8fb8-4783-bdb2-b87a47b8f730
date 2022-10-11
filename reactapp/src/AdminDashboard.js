@@ -4,7 +4,7 @@ import React from 'react';
 function AdminDashboard(props) {
 
     const handleLogout = () => {
-        props.history.push('/login1');
+        props.history.push('/Signin');
     }
 
     return (
@@ -15,7 +15,7 @@ function AdminDashboard(props) {
                         <a href='course' style={{ "text-decoration": "none" }}>Course</a><br /><br />
                         <a href='' style={{ "text-decoration": "none" }}>Instituition</a><br /><br />
                         <a href='' style={{ "text-decoration": "none" }}>Student</a><br /><br />
-                        <a href='login1' style={{ "text-decoration": "none" }}>Logout</a><br /><br />
+                        <a href='Signin' style={{ "text-decoration": "none" }}>Logout</a><br /><br />
                     </div>
 
                 </div>

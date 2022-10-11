@@ -1,8 +1,9 @@
 import React from 'react';
 
 function Dashboard(props) {
+
   const handleLogout = () => {    
-    props.history.push('/login1');
+    props.history.push('/Signin');
   }
 
   return (
